@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-tc-bg: #FCFBF7;
+  --color-tc-dark: #2D2D2A;
+  --color-tc-green: #2D4739;
+  --color-tc-accent: #B56A47;
+  --color-tc-muted: #6B6B63;
+  --color-tc-muted-dark: #5A5A55;
+  --color-tc-border: #E8E8E3;
+  --color-tc-shape-bg: #E8E8E1;
+  --color-tc-shape-border: #D1D1CB;
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-tc-bg text-tc-dark font-sans antialiased;
+}
