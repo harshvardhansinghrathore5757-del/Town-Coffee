@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Clock, Coffee, Phone, Instagram, Linkedin, Menu, X, ChevronRight, Calendar, Users } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 import MenuSection from './components/MenuSection';
 import GallerySection from './components/GallerySection';
@@ -562,6 +563,7 @@ export default function App() {
           <p>All rights reserved.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
